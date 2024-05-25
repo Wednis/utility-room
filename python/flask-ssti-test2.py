@@ -37,10 +37,7 @@ def index():
     echo_content2 = ''
     if input_text:
         echo_content1 = '<p>原代码:<br>{{input_text}}</p>'       #无ssti处
-        try:
-            echo_content2 = '<p>执行结果:<br>%s</p>'%(input_text)    #存在ssti处            
-        except:
-            pass
+        echo_content2 = '<p>执行结果:<br>%s</p>'%(input_text)    #存在ssti处            
 
     html = '<h1>Welcome to SSTI Test</h1>'
     html += input_form
