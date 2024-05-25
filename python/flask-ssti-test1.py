@@ -1,4 +1,4 @@
-#用于本地测试ssti的代码，适用于新手
+#用于本地测试ssti的代码，适用于新手，暂不支持各自绕过过滤的方法，比如拼接绕过
 from flask import *
 
 app = Flask(__name__)
