@@ -26,7 +26,7 @@ def index():
     html += echo_content2
     html += echo_content3
 
-    return render_template_string(html,input_text=input_text)
+    return render_template_string(html, input_text=input_text)
 
 if __name__ == '__main__':
     app.run()
