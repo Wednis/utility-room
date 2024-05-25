@@ -38,7 +38,6 @@ def index():
     if input_text:
         echo_content1 = '<p>原代码:<br>{{input_text}}</p>'       #无ssti处
         try:
-            input_text
             echo_content2 = '<p>执行结果:<br>%s</p>'%(input_text)    #存在ssti处            
         except:
             echo_content2 = '<p>执行结果:<br>代码存在错误</p>'
