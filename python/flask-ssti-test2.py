@@ -40,7 +40,7 @@ def index():
         try:
             echo_content2 = '<p>执行结果:<br>%s</p>'%(input_text)    #存在ssti处            
         except:
-            echo_content2 = '<p>执行结果:<br>代码存在错误</p>'
+            pass
 
     html = '<h1>Welcome to SSTI Test</h1>'
     html += input_form
